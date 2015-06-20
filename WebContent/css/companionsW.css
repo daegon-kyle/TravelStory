@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+#title{
+	text-align:left;
+	background-color:#009;
+	color:white;
+}
+#form{
+	background-color:#CFF;
+	width:270px;
+}
+#btn{
+	text-align:right;
+}
+#table{
+	border:5px solid #006;
+}
+

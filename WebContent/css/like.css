@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+#like{
+	border-collapse:collapse;
+}
+#like td{
+	background-color:#CFF;
+	text-align:center;
+}
+.score{
+	text-align:center;
+}
+

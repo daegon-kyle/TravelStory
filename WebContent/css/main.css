@@ -1,0 +1,11 @@
+@charset "utf-8";
+.title {
+	font-size: 50px;
+	color: #FFF;
+}
+p{
+	text-align:center;
+}
+body{
+	background:img/background_color.png;
+}

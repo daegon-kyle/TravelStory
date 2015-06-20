@@ -1,0 +1,90 @@
+@CHARSET "UTF-8";
+#wid-all{
+	font-size:12px;
+}
+#accordion{
+	width:275px;
+	font-size:12px;
+}
+.ui-datepicker{
+	font-size:12px;
+	width:200px;;
+	border:0px solid #555;
+}
+div.ui-datepicker-header{
+	margin-top:5px;
+	text-align:center;
+	border:0px;
+	font-size:14px;
+}
+#tourPlan-w, #tourPreparation-w, #companion-w{
+	font-size:12px;
+}
+#like-t td, #preference-t td{
+	background-color: #F5FFFA;
+	padding:5px;
+	text-align:center;
+}
+#preference-t{
+	margin:5px auto;
+}
+.si-t, .gu-t, .si-p, .gu-p{
+	width:90px;
+}
+#back-c, #back-t, #back-p{
+	font-size:15px;
+	color:#FF8C00;
+}
+#table-c{
+	width:223px;
+	margin:5px;
+}
+#table-c tr, td{
+	margin:5px;
+}
+.si-c, .gu-c, #age-c{
+	font-size:12px;
+	width:100px;
+}
+.ra-c{
+	font-size:10px;
+}
+.overflow{
+	height:200px;
+}
+.result-contain{
+	margin:1em 0;
+	border-collapse:collapse;
+	width:100%;
+}
+.result-contain th{
+	border:1px solid #eee;
+	padding:.6em 10px;
+	text-align:left;
+	font-size:12px;
+}
+.result-contain td{
+	border:1px solid #eee;
+	font-size:12px;
+	text-align:center;
+}
+.result-title{
+	font-size:12px;
+	margin: .6em auto;
+}
+#btn-td-c, #btn-td-c-2, #btn-td-t, #btn-td-t-2, #btn-td-p, #btn-td-p-2, #btn-td-e{
+	text-align:right;
+	font-size:12px;
+}
+#btn-c, #btn-c-2, #btn-t-s, #btn-t-2, #btn-p, #btn-p-2, #btn-e, #btn-e{
+	width:100px;
+	height:35px;
+}
+fieldset{ 
+	padding:0; 
+	border:0; 
+	 
+}
+#dialog-form-c, #dialog-form-t, #dialog-form-p{
+	font-size:11px;
+}

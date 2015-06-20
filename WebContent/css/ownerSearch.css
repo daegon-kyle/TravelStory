@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+#관리1헤더 {
+	font-weight: bold;
+	font-size: 36px;
+	width: 100%;
+	color: #FFF;
+	background-color: #009;
+}
+#꾸미기설정 {
+	font-weight: bold;
+	color: #FFF;
+	font-size: 24px;
+	width: 100%;
+}
+
+#회원관리페이지최상단 {
+	font-size: 45px;
+	font-weight: bold;
+	background-color: #009;
+}
+
+
+#searchForm {
+	position: absolute;
+	left: 15px;
+	top: 231px;
+	width: 334px;
+	height: 123px;
+	z-index: 2;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 16px;
+}

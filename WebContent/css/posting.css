@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+#title{
+	color:white;
+	background-color:#009;
+	font-weight:bolder;
+	text-align:left;
+	font-size:28px;
+}
+#form{
+	width:600px;
+	margin:0px auto;
+}
+#result{
+	width:550px;
+	margin:0px auto;
+}
+#guide{
+	background-color:#009;
+	color:white;
+	font-weight:bolder;
+	font-size:20px;
+}
+#btn{
+	text-align:right;
+}
+.btn{
+	text-align:center;
+}
+.some{
+	background-color:#36F;
+	color:#CFF;
+	font-weight:bolder;
+}
+.needsP{
+	display:none;
+}
+.comP{
+	display:none;
+}
+.etcP{
+	display:none;
+}

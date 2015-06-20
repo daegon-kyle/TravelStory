@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>여행준비물추천결과</title>
+</head>
+
+<script type="text/javascript">
+	function changeTrColor(trObj, oldColor, newColor) {
+		trObj.style.backgroundColor = newColor;
+        trObj.onmouseout = function(){
+        trObj.style.backgroundColor = oldColor;
+        }
+    }
+	function clickTrEvent(trObj) {
+		window.open('travelMaterialDetail.html');
+    }
+</script>
+
+<body background="../img/background_color.gif">
+	
+    
+	<div style="overflow:scroll; padding:10px; width:380px">
+	<table border="1">
+    	<tr>
+        	<th bgcolor="#0099FF">제목</th>
+            <th bgcolor="#0099FF">작성날짜</th>
+            <th bgcolor="#0099FF">작성자이름</th>
+            <th bgcolor="#0099FF">좋아요 수</th>
+        </tr>
+        <tr id="1" onClick="javascript:clickTrEvent(this)" onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#00BFFF')" style="cursor:hand">
+        	<td>미국 3박 4일</td>
+            <td>2014-07-18</td>
+            <td>이화섭</td>
+            <td>4</td>
+        </tr>
+        <tr id="2" onClick="javascript:clickTrEvent(this)" onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#00BFFF')" style="cursor:hand">
+        	<td>자전거 여행</td>
+            <td>2014-03-26</td>
+            <td>김대곤</td>
+            <td>2</td>
+        </tr>
+    </table>
+	</div>
+	
+</body>
+</html>

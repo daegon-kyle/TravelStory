@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>여행준비물 추천 상세보기</title>
+<style type="text/css">
+.area_si {
+	text-align: left;
+}
+</style>
+</head>
+<script>
+	var TravelMaterial=function(title, like, travelAreaSi, travelAreaGu, writeDate, writer, content){
+		this.title=title;
+		this.like=like;
+		this.travelAreaSi=travelAreaSi;
+		this.travelAreaGu=travelAreaGu;
+		this.writeDate=writeDate;
+		this.writer=writer;
+		this.content=content;
+		
+		this.getTravelAreaSi=function(){
+			return this.travelAreaSi;
+		}
+		this.getTitle=function(){
+			return this.title;
+		}
+		this.getLike=function(){
+			return this.like;
+		}
+		this.getTravelAreaGu=function(){
+			return this.travelAreaGu;
+		}
+		this.getWriteDate=function(){
+			return this.writeDate;
+		}
+		this.getWriter=function(){
+			return this.writer;
+		}
+		this.getContent=function(){
+			return this.content;
+		}
+		this.setLike=function(like){
+			this.like=like;
+		}
+	};
+	
+	var travelMaterial=new TravelMaterial('자전거 여행 준비물','2','춘천시','봉의동','2014-03-23','김대곤','총 여행일정은 4박5일동안 이였어요 \n다음의 리스트는 여행전 준비한 준비물들이고\n여행하면서 필요성을 느낀 준비물은 따로 적어두었어요.\n참고하시고 준비 잘하셔서 즐거운 여행하세요~\n\n속옷 4개\t 양말3짝 \t 물 \t 여분타이어');
+	window.onload=function(){
+		document.getElementById('title').value=travelMaterial.getTitle();
+		document.getElementById('materialContent').value=travelMaterial.getContent();
+	}
+	function like_onclick(){
+		var like=document.getElementById('like');
+		var realLike=parseInt(travelMaterial.getLike())+1;
+		like.setAttribute('value', realLike);
+		//window.alert("22");
+	}
+	function confirm_onclick(){
+		window.open('about:blank', '_self').close();  
+	}
+</script>
+<body background="../img/background_color.gif">
+<table width="70%" border="0">
+  <tr>
+    <td width="25%" scope="col"><img src="img/title.png" width="217" height="41"></td>
+    <td scope="col" colspan="2">
+      <input name="title" type="text" id="title" style="width:90%;" align="left"/>
+	</td>
+    <td width="15%" scope="col"><img src="img/likeRed.gif"></td>
+    <td width="23%" scope="col">
+    	<input type='text' id='like' value='2' readonly size='1'/>
+    </td>   <!-- 좋아요 개수-->
+  </tr>
+  <tr>
+    <td><img src="img/area.png" width="215" height="45"></td>
+    <td width="11%" align="left" class="area_si">
+	<script>
+		document.write(travelMaterial.getTravelAreaSi()); //시
+	</script>
+    </td>
+    <td width="25%"><img src="img/travelArea.gif" width="217" height="41"></td>
+    <td><script>
+		document.write(travelMaterial.getTravelAreaGu()); //구
+	</script></td>
+  </tr>
+  <tr>
+    <td><img src="img/wrtiedate.png" width="215" height="41"></td>
+    <td><script>
+		document.write(travelMaterial.getWriteDate());  //작성날짜
+	</script></td>
+    <td><img src="img/travelWriter.gif" width="217" height="41"></td>
+    <td><script>
+		document.write(travelMaterial.getWriter());   //작성자
+	</script></td>
+  </tr>
+  <tr>
+    <td><img src="img/travelMaterial.png" width="215" height="41"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+  	<td colspan="5">
+    	<textarea name="materialContent" id="materialContent" rows="15" cols="95" readonly>
+        </textarea>
+    </td>
+  </tr>
+  <tr>
+  	<td height="41" colspan="2" valign="bottom"><img src="img/confirm.gif" align="right" onclick="confirm_onclick()"></td>
+    <td colspan="2" valign="bottom"><img src="img/like.gif" align="center"id="like" onclick="like_onclick()"></td>
+  </tr>
+</table>
+
+</div>
+  
+</body>
+</html>
